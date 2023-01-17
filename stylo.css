@@ -34,12 +34,13 @@ nav ul li a:hover{
     border-radius: 10%;
 }
 
-/* ---------------------------------------- */
-article{
+/* ----------------|Exo-1|------------------ */
+.borderCarre{
     width: 600px;
     margin: 50px auto;
     border: solid;
     padding: 20px;
+    background-color: rgb(160, 189, 220);
 }
 h2{
     text-align: center;
@@ -78,6 +79,44 @@ h2{
         transform: rotate(-360deg);
     }
 }
+/* ----------------|Exo-2|------------------ */
+.borderBalle1{
+    width: 300px;
+    height: 700px;
+    margin: 50px auto;
+    border: solid;
+    padding: 20px;
+    background-color: rgb(160, 189, 220);
+}
+.borderBalle2{
+    width: 70px;
+    height: 500px;
+    margin: 50px auto;
+    border: green solid;
+}
 
+.balle{
+    position:relative;
+    left: 6px;
+    background-color:yellow;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: solid white;
+    animation: balle 0.9s ease infinite;
+}
 
+@keyframes balle{
+    0%{
+        height: 50px;
+        width: 50px;
+    }
+    
+    100%{
+        height: 50px;
+        width: 55px;
+        transform: translateY(445px);
+    }
+    
 
+}
