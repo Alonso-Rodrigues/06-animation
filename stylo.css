@@ -1,0 +1,83 @@
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: antiquewhite;
+}
+/* --------------|MENU|----------------- */
+nav ul{
+    text-align: center;
+    background-color: rgb(65, 137, 150);
+    position: absolute;
+    top: 150px;
+    left: 60px;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 50px;
+}
+
+nav li a{
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover{
+    background-color: rgb(100, 180, 180);
+    color: white;
+    text-decoration: underline;
+    border-radius: 10%;
+}
+
+/* ---------------------------------------- */
+article{
+    width: 600px;
+    margin: 50px auto;
+    border: solid;
+    padding: 20px;
+}
+h2{
+    text-align: center;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+    position: relative;
+    left: 230px; 
+}
+
+.boxColor div{
+    animation-name: changeColor;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 10s;
+    
+    
+}
+
+@keyframes changeColor {
+
+    0%{
+        background-color: yellow;
+        transform: rotate(-180deg);
+    }
+    50%{
+        background-color: orange;
+        transform: rotate(180deg);
+    }
+
+    100%{
+        background-color: red;
+        transform: rotate(-360deg);
+    }
+}
+
+
+
