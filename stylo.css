@@ -7,31 +7,35 @@ body{
     background-color: antiquewhite;
 }
 /* --------------|MENU|----------------- */
-nav ul{
+.MenuNav{
+    display: inline-block;
     text-align: center;
     background-color: rgb(65, 137, 150);
+    padding: 20px;
     position: absolute;
-    top: 150px;
+    top: 100px;
     left: 60px;
+    
 }
 
-nav ul li {
+.MenuNav ul li {
     display: inline-block;
     padding: 50px;
 }
 
-nav li a{
+.MenuNav li a{
     display: inline-block;
-    padding: 20px;
+    padding: 10px;
     text-decoration: none;
     color: black;
+    font-weight:bold;
 }
 
-nav ul li a:hover{
+.MenuNav ul li a:hover{
     background-color: rgb(100, 180, 180);
     color: white;
     text-decoration: underline;
-    border-radius: 10%;
+    border: thick double #2b8fb6;
 }
 
 /* ----------------|Exo-1|------------------ */
@@ -103,20 +107,111 @@ h2{
     height: 50px;
     border-radius: 100%;
     border: solid white;
-    animation: balle 0.9s ease infinite;
+    animation: balle ease infinite;
+    animation-duration: 2.5s;
+    
 }
 
 @keyframes balle{
     0%{
-        height: 50px;
-        width: 50px;
+        transform: translateY(0px);
     }
-    
-    100%{
-        height: 50px;
-        width: 55px;
+    30%{
+        
         transform: translateY(445px);
     }
-    
-
+    50%{
+        
+        transform: translateY(100px);
+    }
+    70%{
+        
+        transform: translateY(445px);
+    }
+    90%{
+        
+        transform: translateY(200px);
+    }
+    100%{
+        
+        transform: translateY(445px);
+    }
 }
+
+/* ----------------|Exo-3|------------------ */
+.boxChargement{
+    width: 600px;
+    margin: 50px auto;
+    border: solid;
+    padding: 20px;
+    background-color: rgb(160, 189, 220);
+}
+
+.cercle {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border: solid;
+    border-radius: 100%;
+    display: inline-block;
+    position: relative;
+    left: 140px;
+
+    animation-name: changeCollor;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-delay: 0.1s;
+}
+
+@keyframes changeCollor {
+    from{
+        background-color: yellow;
+    }
+    to{
+        background-color: white;
+    }
+    to{
+        background-color: red;
+    }
+}
+
+.cercle:nth-child(2){
+    animation-delay: 3s;
+}
+.cercle:nth-child(3){
+    animation-delay: 5s;
+}
+
+/* ----------------|Exo-4|------------------ */
+.boxChargement{
+    width: 600px;
+    margin: 50px auto;
+    border: solid;
+    padding: 20px;
+    background-color: rgb(160, 189, 220);
+}
+.transform1{
+    width: 100px;
+    height: 30px;
+    background-color: black;
+    position: relative;
+    left: 230px;
+    top: 10px;
+    text-align: center;
+    color: white;
+    list-style: none;      
+}
+
+.transform2{ 
+    height: 30px;
+    background-color:black;
+    transition: 1s;
+    
+}
+
+.transform2:hover{ 
+    height: 400px; 
+    background-color:black;   
+}
+/* ----------------|Exo-5|------------------ */
