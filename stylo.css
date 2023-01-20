@@ -11,16 +11,19 @@ body{
     display: inline-block;
     text-align: center;
     background-color: rgb(65, 137, 150);
-    padding: 20px;
+    padding: 10px;
     position: absolute;
     top: 100px;
-    left: 60px;
+    left: 250px;
+    border: 0.5rem solid #2b8fb6;
     
 }
 
 .MenuNav ul li {
     display: inline-block;
-    padding: 50px;
+    padding: 2px;
+    margin: 10px;
+    border: ridge white;
 }
 
 .MenuNav li a{
@@ -29,6 +32,7 @@ body{
     text-decoration: none;
     color: black;
     font-weight:bold;
+    border: thick double transparent;
 }
 
 .MenuNav ul li a:hover{
@@ -54,7 +58,7 @@ h2{
 .box{
     width: 100px;
     height: 100px;
-    border: 1px solid;
+    border: 1mm ridge;
     position: relative;
     left: 230px; 
 }
@@ -150,7 +154,7 @@ h2{
     width: 100px;
     height: 100px;
     background-color: red;
-    border: solid;
+    border: 1mm ridge;
     border-radius: 100%;
     display: inline-block;
     position: relative;
@@ -206,7 +210,8 @@ h2{
 
 .transform2{ 
     height: 30px;
-    background-color:black;
+    background-color: orangered;
+    border:  thick double;
     border-radius: 10px;
     transition: 1s;
 }
@@ -214,7 +219,7 @@ h2{
 .transform2:hover{ 
     height: 500px;
     border-radius: 10px;
-    background-color:black;   
+    background-color:red;   
 }
 /* ----------------|Exo-5|------------------ */
 .boxChargement{
@@ -236,11 +241,11 @@ h2{
     height: 30px;
     width: 30px;
     background-color: red;
-    border: solid;
-    text-align: center;
+    border: thick double rgb(240, 180, 166);
     position: absolute;
     left: 1330px;
     top: 237px;
+    /* opacity: 80%; */
     
     animation-name: carreColor;
     animation-duration: 8s;
@@ -295,11 +300,105 @@ h2{
     animation-delay: 2.5s;
 }
 
-/* ----------------|Exo-7|------------------ */
-.boxChargement{
+/* ----------------|Exo-6|------------------ */
+.boxChargement1{
     width: 600px;
+    height: 150px;
     margin: 50px auto;
     border: solid;
     padding: 20px;
     background-color: rgb(160, 189, 220);
+   
+}
+
+.carrousel-container1{
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    left: 350px;
+    top: 237px;
+    border: solid red;
+}
+
+.carrousel-container2{
+    position: absolute;
+    animation-name: circle;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    transform-style: preserve-3d;
+    animation-timing-function: linear;
+} 
+
+.carrousel-item{
+    width: 30px;
+    height: 30px;
+    border: thick double orangered;
+    position: absolute; 
+}
+
+#block1{
+    background-color: red;
+    transform: rotateY(45deg) translateZ(80px) ;
+}
+
+#block2{
+    background-color: orange;
+    transform: rotateY(90deg) translateZ(80px) ;
+}
+#block3{
+    background-color: orangered;
+    transform: rotateY(135deg) translateZ(80px) ;
+}
+
+#block4{
+    background-color: palevioletred;
+    transform: rotateY(180deg) translateZ(80px) ;
+}
+#block5{
+    background-color: rosybrown;
+    transform: rotateY(225deg) translateZ(80px) ;
+}
+
+#block6{
+    background-color: brown;
+    transform: rotateY(270deg) translateZ(80px) ;
+}
+
+#block7{
+    background-color: orchid;
+    transform: rotateY(315deg) translateZ(80px) ;
+}
+
+#block8{
+    background-color: burlywood;
+    transform: rotateY(360deg) translateZ(80px) ;
+}
+
+@keyframes circle{
+    0%{
+        transform: rotateX(0deg) rotateY(0deg);
+        top: 5%;
+        left: 10%;
+    }
+    25%{
+        transform: rotateX(80deg) rotateY(80deg);
+        top: 15%;
+        left: 85%;
+    }
+    50%
+    {
+        transform: rotateX(160deg) rotateY(160deg);
+        top: 90%;
+        left: 90%;
+    }
+    75%{
+        transform: rotateX(240deg) rotateY(240deg);
+        top: 80%;
+        left: 15%;
+    }
+    100%{
+        transform: rotateX(360deg) rotateY(360deg);
+        top: 10%;   
+        left: 10%;
+    }
 }
